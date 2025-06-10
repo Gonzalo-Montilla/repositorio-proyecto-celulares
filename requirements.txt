@@ -1,0 +1,5 @@
+fastapi
+   uvicorn
+   sqlalchemy
+   psycopg2-binary  # Para SQLite, puedes omitir si usas otro DB
+   jinja2

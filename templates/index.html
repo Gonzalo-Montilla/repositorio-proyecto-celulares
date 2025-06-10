@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl">
+        <h2 class="text-2xl font-bold mb-4 text-center">Gestión de Registros</h2>
+        <form id="crudForm" class="space-y-4 mb-6">
+            <div>
+                <label class="block text-gray-700">Entidad</label>
+                <select id="entity" class="w-full p-2 border rounded" required>
+                    <option value="celulares">Celulares</option>
+                    <option value="clientes">Clientes</option>
+                    <option value="proveedores">Proveedores</option>
+                </select>
+            </div>
+            <input type="hidden" id="editId">
+            <div id="formFields"></div>
+            <button type="submit" id="submitBtn" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Enviar</button>
+        </form>
+        <div id="dataList" class="mt-6">
+            <h3 class="text-xl font-semibold mb-2">Lista de Registros</h3>
+            <div id="records" class="bg-white p-4 rounded-lg shadow overflow-x-auto"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
