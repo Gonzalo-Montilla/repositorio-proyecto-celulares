@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `
     };
 
-    // Función para cargar y mostrar registros en una tabla
+    // Función para cargar y mostrar registros en tabla
     const loadRecords = async (entity) => {
         try {
             const response = await fetch(`http://127.0.0.1:8000/${entity}`);
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Función para editar un registro
+    // Función para editar registro
     const editRecord = async (entity, id) => {
         try {
             const response = await fetch(`http://127.0.0.1:8000/${entity}/${id}`);
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Función para eliminar un registro
+    // Función para eliminar registro
     const deleteRecord = async (entity, id) => {
         if (confirm('¿Estás seguro de eliminar este registro?')) {
             try {

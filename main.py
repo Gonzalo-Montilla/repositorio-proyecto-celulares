@@ -188,7 +188,7 @@ async def delete_proveedor(proveedor_id: int):
     finally:
         db.close()
 
-# Ruta para el formulario HTML con Request explícito
+# Ruta para el formulario HTML 
 @app.get("/", response_class=HTMLResponse)
 async def read_form(request: Request):
     try:
